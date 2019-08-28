@@ -3935,3 +3935,14 @@ Processing by AuthorsController#show as HTML
 Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/authors/9" for 69.250.234.128 at 2019-08-28 00:21:46 +0000
+Cannot render console from 69.250.234.128! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 9]]
+  Rendered authors/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 0.3ms)
+
+
